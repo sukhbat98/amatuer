@@ -37,9 +37,10 @@
 
   &--b-margin {
     margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 4rem;
+    }
   }
 
-  @mixin atSmall {
-    margin-bottom: 4rem;
-  }
 }
