@@ -56,6 +56,19 @@ let config = {
   module: {
     rules: [
       cssConfig,
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              "@babel/preset-react",
+              "@babel/preset-env",
+            ]
+          }
+        }
+      }
     ],
   },
 }
@@ -81,18 +94,6 @@ if (currentTask == "dev") {
 }
 
 if (currentTask == "build") {
-  config.module.rules.push({
-    test: /\.js$/,
-    exclude: /(node_modules)/,
-    use: {
-      loader: 'babel-loader',
-      options: {
-        presets: [
-          "@babel/preset-env",
-        ]
-      }
-    }
-  })
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   postCSSPlugins.push(require("cssnano"))
 

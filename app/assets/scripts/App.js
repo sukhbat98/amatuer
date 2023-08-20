@@ -1,3 +1,6 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
 import 'lazysizes'
 
 import '../styles/styles.css';
@@ -6,6 +9,12 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import ClientArea from './modules/ClientArea';
+
+import MyReactComponent from './modules/MyReactComponent';
+
+
+const root = createRoot(document.getElementById("my-react-example"))
+root.render(<MyReactComponent />);
 
 new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
