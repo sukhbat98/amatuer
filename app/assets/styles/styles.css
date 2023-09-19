@@ -25,4 +25,5 @@
 @import 'modules/_social-icons.css';
 @import 'modules/_client-area.css';
 
-@import 'modules/overview.css'
+@import 'modules/_overview.css';
+@import 'modules/_timeline.css';

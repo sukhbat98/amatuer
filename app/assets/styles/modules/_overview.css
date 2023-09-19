@@ -1,7 +1,7 @@
 .overview {
   background: #0f0f29;
   color: #fff;
-  padding: 70px 0px;
+  padding: 50px 0px;
 
   &__container {
     width: 100%;
@@ -19,7 +19,20 @@
 
   &__table {
     border-collapse: collapse;
-    border: 1px solid #dee2e6;
-    border-color: #fff;
+
+    table, td, th {
+      border: 1px solid #dee2e6;
+    }
+
+    td {
+      padding: 0.75rem;
+      vertical-align: top;
+    }
+  }
+
+  &__table-text {
+    font-size: .875rem;
+    line-height: 1.3rem;
+    color: #fff;
   }
 }
