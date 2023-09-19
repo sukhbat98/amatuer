@@ -1,0 +1,25 @@
+.overview {
+  background: #0f0f29;
+  color: #fff;
+  padding: 70px 0px;
+
+  &__container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__name-small {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__table {
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+    border-color: #fff;
+  }
+}
