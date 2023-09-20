@@ -21,6 +21,10 @@
     line-height: 1.3rem;
     color: rgba(1, 26, 61, 0.7);
   }
+
+  @mixin atLarge {
+    max-width: 1140px;
+  }
 }
 
 .timeline {
@@ -129,6 +133,10 @@
       width: 20px;
       height: 20px;
     }
+  }
+
+  @mixin atLarge {
+    max-width: 46em;
   }
 
 }
