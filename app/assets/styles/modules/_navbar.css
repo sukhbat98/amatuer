@@ -110,9 +110,9 @@
   }
 
   img {
-    max-width: 36px; /* Set the maximum width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 4px;
+    max-width: 36px;
+    height: auto;
+    margin: 0 3px;
   }
 
   @mixin atLarge {
