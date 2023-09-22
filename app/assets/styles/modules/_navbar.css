@@ -122,7 +122,7 @@
   }
 
   &__header-dark {
-    background: #011a3d;
+    background: rgba(1, 26, 61, 0.8);
   }
 
 }
