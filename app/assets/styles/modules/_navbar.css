@@ -1,13 +1,25 @@
 .navbar {
-  background: #011a3d;
+  background-color: rgba(1, 26, 61, 0.8);
   position: absolute;
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 0.5rem 1rem;
   justify-content: space-between;
   z-index: 1020;
+
+  img {
+    max-width: 36px;
+    height: auto;
+    margin: 0 3px;
+  }
+
+  @mixin atLarge {
+    position: fixed;
+    background-color: transparent;
+    padding: 0.5rem 14rem;
+    flex-wrap: nowrap;
+  }
 
   &__is-visible {
     display: none;
@@ -109,15 +121,8 @@
 
   }
 
-  img {
-    max-width: 36px;
-    height: auto;
-    margin: 0 3px;
+  &__header-dark {
+    background: #011a3d;
   }
 
-  @mixin atLarge {
-    background-color: transparent;
-    padding: 0.5rem 14rem;
-    flex-wrap: nowrap;
-  }
 }
