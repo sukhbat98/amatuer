@@ -15,7 +15,7 @@
   }
 
   @mixin atLarge {
-    padding: 0 1rem;
+    padding: 0.5rem 14rem;
     background-color: transparent;
     flex-wrap: nowrap;
   }
