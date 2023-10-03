@@ -1,0 +1,65 @@
+.site-footer {
+  background: #011a3d;
+  color: #fff;
+  padding: 44px 35px;
+
+  &__container {
+    justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    @mixin atLarge {
+      display: flex;
+      margin-left: 0;
+      margin-left: 0;
+    }
+  }
+
+  &__img {
+    width: 200px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    margin-top: 15px;
+    text-align: justify;
+
+    a {
+      color: white;
+    }
+  }
+
+  &__right {
+    margin-top: 1.25rem;
+
+    @mixin atLarge {
+      margin-top: 0;
+    }
+  }
+
+  &__info {
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  &__social-title {
+    margin-top: 1rem;
+  }
+
+  &__social-icons {
+    display: flex;
+    margin-top: 17.5px;
+  }
+
+  &__social-item {
+    margin-right: 15px;
+  }
+
+}

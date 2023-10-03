@@ -1,0 +1,8 @@
+.manuals {
+  text-align: center;
+  margin: 150px auto 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
