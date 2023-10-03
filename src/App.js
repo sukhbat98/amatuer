@@ -1,10 +1,28 @@
 import React from 'react';
+import {
+  Link,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 
-export function App() {
-    return (
-        <div>
-            <h1>React App</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos delectus voluptatem ab repellat saepe eos molestiae cupiditate, omnis doloremque, necessitatibus totam consectetur porro sint quam libero aperiam? Laborum, quaerat?</p>
-        </div>
-    );
+import Home from './pages/Home';
+import Manuals from './pages/Manuals';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "manuals",
+    element: <Manuals />,
+  },
+]);
+
+function App() {
+  return (
+    <RouterProvider router={router}></RouterProvider>
+  );
 }
+
+export default App;
