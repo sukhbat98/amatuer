@@ -7,7 +7,7 @@ const initDownloadFiles = [
   {
     title : "Maya-3 and Maya-4 High Level Specifications",
     content: "",
-    downloadLink: "",
+    downloadLink: "https://stamina4space.upd.edu.ph/wp-content/uploads/2021/10/Maya-3-Maya-4_-High-level-Specifications.docx-1.pdf",
   },
   {
     title : "Diwata-2 Amateur Radio Unit (ARU) Utilization Manual",
@@ -24,7 +24,7 @@ const initDownloadFiles = [
       <a href="https://twitter.com/Diwata2PH">https://twitter.com/Diwata2PH</a>
     </p>
     `,
-    downloadLink: "",
+    downloadLink: "https://stamina4space.upd.edu.ph/wp-content/uploads/2020/10/Diwata-2-ARU-Utilization-Manual.pdf",
   },
 ]
 
@@ -34,36 +34,15 @@ function Manuals() {
 
   const handleSearch = (value) => {
     setSearchValue(value)
+    let filtered = initDownloadFiles.filter((downloadFile) => downloadFile.title.toLowerCase().includes(value.toLowerCase())
+    )
+
+    setDownloadFiles(filtered)
   }
 
   const renderHTML = (htmlString) => {
     return { __html: htmlString };
   };
-
-  const displayDownloadFiles = useMemo(() => {
-    let value = []
-    downloadFiles.map((downloadFile, idx) => {
-      value.push(
-        <div key={idx} className="manuals__download-item row mb-3">
-          <div className="manuals__download-icon col-lg-1">
-            <img alt="123" className="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/dl-icon.png" />
-          </div>
-          <div className="col-lg-10">
-            <div className="manuals__download-item-title my-2">{downloadFile.title}</div>
-            <div className="manuals__download-item-content" dangerouslySetInnerHTML={renderHTML(downloadFile.content)}>
-            </div>
-          </div>
-          <div className="manuals__download-actions col-lg-1">
-            <a href={downloadFile.downloadLink}>
-              <i className="fa fa-download" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      )
-    })
-
-    return value
-  }, downloadFiles)
 
   return (
     <>
@@ -77,9 +56,9 @@ function Manuals() {
           <div className="col-lg-3">
             <div className="manuals__search">
               <div className="input-group">
-                <input type="text" className="form-control" placeholder="Search Manuals" />
+                <input type="text" className="form-control" placeholder="Search Manuals" value={searchValue} onChange={(e) => handleSearch(e.target.value)}/>
                 <div className="input-group-append">
-                  <button className="btn btn--bg-white" value={searchValue} type="button" onChange={(e) => handleSearch(e.target.value)}>
+                  <button className="btn btn--bg-white" type="button">
                     <i className="fa fa-search"></i>
                   </button>
                 </div>
@@ -91,7 +70,26 @@ function Manuals() {
         {/* download files */}
         <div className="manuals__wrapper">
           <div className="manuals__download-items-container">
-            {displayDownloadFiles}
+            {/* {displayDownloadFiles} */}
+            {
+              downloadFiles.map((downloadFile, idx) => (
+                <div key={idx} className="manuals__download-item row mb-3">
+                  <div className="manuals__download-icon col-lg-1">
+                    <img alt="123" className="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/dl-icon.png" />
+                  </div>
+                  <div className="col-lg-10">
+                    <div className="manuals__download-item-title my-2">{downloadFile.title}</div>
+                    <div className="manuals__download-item-content" dangerouslySetInnerHTML={renderHTML(downloadFile.content)}>
+                    </div>
+                  </div>
+                  <div className="manuals__download-actions col-lg-1">
+                    <a href={downloadFile.downloadLink}>
+                      <i className="fa fa-download" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>
