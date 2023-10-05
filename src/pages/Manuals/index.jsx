@@ -44,6 +44,13 @@ function Manuals() {
     return { __html: htmlString };
   };
 
+  const handleSearchBtn = () => {
+    let filtered = initDownloadFiles.filter((downloadFile) => downloadFile.title.toLowerCase().includes(searchValue.toLowerCase())
+    )
+
+    setDownloadFiles(filtered)
+  }
+
   return (
     <>
       <Header />
@@ -55,13 +62,11 @@ function Manuals() {
           </div>
           <div className="col-lg-3">
             <div className="manuals__search">
-              <div className="input-group">
-                <input type="text" className="form-control" placeholder="Search Manuals" value={searchValue} onChange={(e) => handleSearch(e.target.value)}/>
-                <div className="input-group-append">
-                  <button className="btn btn--bg-white" type="button">
-                    <i className="fa fa-search"></i>
-                  </button>
-                </div>
+              <div className="input-group search-box">
+                <input className="form-control" type="search" placeholder="Search" />
+                <button className="btn btn-outline-dark" type="submit">
+                  <i className="fa fa-search"></i>
+                </button>
               </div>
             </div>
           </div>
