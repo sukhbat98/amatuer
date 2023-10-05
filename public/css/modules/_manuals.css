@@ -1,8 +1,89 @@
 .manuals {
-  text-align: center;
-  margin: 150px auto 20px;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @mixin atLarge {
+    max-width: 1140px;
+  }
+
+  &__downloads {
+    text-align: center;
+    padding: 150px 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @mixin atLarge {
+      text-align: start;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: black;
+  }
+
+  &__sub-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__search {
+    margin-top: 1.25rem;
+
+    @mixin atLarge {
+      margin-top: 0;
+    }
+  }
+
+  &__wrapper {
+    min-height: 25rem;
+    height: 100%;
+  }
+
+  &__download-items-container {
+    margin-top: 50px;
+  }
+
+  &__download-item {
+    display: flex;
+    background-color: #f3f9fb;
+    padding: 30px 37px 30px;
+  }
+
+  &__download-icon {
+    text-align: center;
+  }
+
+  &__download-item-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #424242;
+  }
+
+  &__download-item-content {
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__download-actions {
+    margin-top: 20px;
+
+    a {
+      color: #707070;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
 }

@@ -3,7 +3,7 @@ import throttle from 'lodash/throttle';
 import React, { useEffect, useState } from "react";
 
 function Header() {
-  const [isDark, setIsDark] = useState(false)
+  const [IsScrolled, setIsScrolled] = useState(false)
   const [isToggle, setIsToggle] = useState(false)
 
   useEffect(() => {
@@ -12,9 +12,9 @@ function Header() {
 
   function runOnScroll() {
     if (window.scrollY > 60) {
-      setIsDark(true)
+      setIsScrolled(true)
     } else {
-      setIsDark(false)
+      setIsScrolled(false)
     }
   }
 
@@ -22,8 +22,11 @@ function Header() {
     setIsToggle(!isToggle)
   }
 
+  // classes
+  let headerClassName = IsScrolled ? "navbar navbar__header-dark" : "navbar"
+
   return (
-    <nav className={`navbar ${isDark && 'navbar__header-dark'}`}>
+    <nav className={headerClassName}>
       <div className="navbar__container-fluid">
         <a href="/" className="navbar__brand">
           <img alt="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/landing-logos/1.png" />
