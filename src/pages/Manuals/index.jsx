@@ -63,7 +63,7 @@ function Manuals() {
           <div className="col-lg-3">
             <div className="manuals__search">
               <div className="input-group search-box">
-                <input className="form-control" type="search" placeholder="Search" />
+                <input className="form-control" style={{backgroundColor: "rgb(16, 18, 25)", borderColor: "#212529", border: "1px solid #212529", color: "#fff"}} type="search" placeholder="Search" />
                 <button className="btn btn-outline-dark" type="submit">
                   <i className="fa fa-search"></i>
                 </button>

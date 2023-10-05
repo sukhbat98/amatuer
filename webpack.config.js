@@ -1,56 +1,57 @@
 const path = require('path');
-const webpack = require('webpack')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const InterpolateHtmlPlugin = require('interpolate-html-plugin')
+const webpack = require("webpack")
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  entry: './src/index.js', // Your entry file
   output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'index.bundle.js',
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
         exclude: /node_modules/,
-        use: ['file-loader?name=[name].[ext]'] // ?name=[name].[ext] is only necessary to preserve the original file name
+        use: ['file-loader?name=[name].[ext]']
       },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           'postcss-loader',
         ],
       },
-    ]
+    ],
   },
   plugins: [
-    new MiniCssExtractPlugin(),
-    new InterpolateHtmlPlugin({PUBLIC_URL: '' }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html', // Your HTML template
+    }),
     new webpack.ProvidePlugin({
       process: 'process/browser',
     }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'public'),
+          to: path.join(__dirname, 'dist', 'images'),
+          noErrorOnMissing: true
+        }
+      ]
+    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'], // File extensions to resolve
-    alias: {
-      process: "process/browser"
-    },
   },
   devServer: {
-    port: 3000,
-    watchContentBase: true,
     historyApiFallback: true,
-  },
+  }
 };

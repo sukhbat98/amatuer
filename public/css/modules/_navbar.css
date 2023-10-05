@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #011a3d;
+  background-color: $mainDark;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
@@ -9,7 +9,7 @@
   position: fixed;
 
   img {
-    max-width: 36px;
+    max-width: 64px;
     height: auto;
     margin: 0 3px;
   }
@@ -120,7 +120,7 @@
   }
 
   &__header-dark {
-    background: #011a3d;
+    background: $mainDark;
   }
 
 }

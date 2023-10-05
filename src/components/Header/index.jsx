@@ -29,9 +29,7 @@ function Header() {
     <nav className={headerClassName}>
       <div className="navbar__container-fluid">
         <a href="/" className="navbar__brand">
-          <img alt="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/landing-logos/1.png" />
-          <img alt="" src=" https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/landing-logos/2.png" />
-          <img alt="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/landing-logos/3.png" />
+          <img alt="" src="/images/ondo.svg" />
         </a>
         <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
           <div className="navbar__toggler-menu">

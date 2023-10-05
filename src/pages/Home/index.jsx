@@ -14,7 +14,7 @@ function Home() {
         <div className="row large-hero">
           <div className="row__large-6">
             <picture>
-              <img className="large-hero__image" src={`public/images/maya-5.png`} alt="Ocean view" />
+              <img className="large-hero__image" src={`/images/maya-5.png`} alt="Ocean view" />
             </picture>
           </div>
           <div className="row__large-6">

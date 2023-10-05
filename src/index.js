@@ -1,5 +1,3 @@
-require('file-loader?name=[name].[ext]!./index.html');
-
 import 'bootstrap/dist/css/bootstrap.css';
 
 import React from 'react';
