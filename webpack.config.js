@@ -42,7 +42,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'public'),
-          to: path.join(__dirname, 'dist', 'images'),
+          to: path.join(__dirname, 'dist'),
           noErrorOnMissing: true
         }
       ]
