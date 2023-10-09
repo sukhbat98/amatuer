@@ -10,27 +10,25 @@ function Home() {
   return (
     <>
       <Header />
-      <div>
-        <div className="row large-hero">
-          <div className="row__large-6">
-            <picture>
-              <img className="large-hero__image" src={`/images/maya-5.png`} alt="Ocean view" />
-            </picture>
-          </div>
-          <div className="row__large-6">
-            <h1 className="large-hero__name">
-              Maya-5 and Maya-6
-            </h1>
-            <p className="large-hero__text">
-              Maya-5 and Maya-6 are the second set of Philippine university-built CubeSats, currently being developed by the second batch of STeP-UP scholars. The project aims to gain and locally extend the knowledge and skills on satellite development acquired from foreign schooling and utilize the domestic capabilities for satellite development. The two cube satellites share the same bus but differ in mission payload. Maya-5 has the same mission payload as that of the Maya-2, and Maya-6 has the experimental on-board computer (OBC-EX) mission payload, which controls the attitude determination and control system (ADCS) and hentenna (HNT) missions. The development of Maya-5 and Maya-6 aims to continue and build on the country’s initiatives on satellite development while transitioning to locally available components and fabricated boards, and manufactured structural frames by designing, building, testing, launching, and operating satellites that will serve as the heritage for future CubeSat missions.
-            </p>
-            <div className="large-hero__button">
-              <Link to="manuals">
-                <button className="large-hero__button-light">
-                  BROWSE MANUALS
-                </button>
-              </Link>
-            </div>
+      <div className="row large-hero" style={{margin: "0px"}}>
+        <div className="row__large-6">
+          <picture>
+            <img className="large-hero__image" src={`/images/maya-5.png`} alt="Ocean view" />
+          </picture>
+        </div>
+        <div className="row__large-6">
+          <h1 className="large-hero__name">
+            Maya-5 and Maya-6
+          </h1>
+          <p className="large-hero__text">
+            Maya-5 and Maya-6 are the second set of Philippine university-built CubeSats, currently being developed by the second batch of STeP-UP scholars. The project aims to gain and locally extend the knowledge and skills on satellite development acquired from foreign schooling and utilize the domestic capabilities for satellite development. The two cube satellites share the same bus but differ in mission payload. Maya-5 has the same mission payload as that of the Maya-2, and Maya-6 has the experimental on-board computer (OBC-EX) mission payload, which controls the attitude determination and control system (ADCS) and hentenna (HNT) missions. The development of Maya-5 and Maya-6 aims to continue and build on the country’s initiatives on satellite development while transitioning to locally available components and fabricated boards, and manufactured structural frames by designing, building, testing, launching, and operating satellites that will serve as the heritage for future CubeSat missions.
+          </p>
+          <div className="large-hero__button">
+            <Link to="manuals">
+              <button className="large-hero__button-light">
+                BROWSE MANUALS
+              </button>
+            </Link>
           </div>
         </div>
       </div>
