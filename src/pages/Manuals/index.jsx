@@ -7,7 +7,7 @@ const initDownloadFiles = [
   {
     title : "Maya-3 and Maya-4 High Level Specifications",
     content: "",
-    downloadLink: "/assets/pdf/test.pdf",
+    downloadLink: "/assets/pdf/dummy.pdf",
   },
   {
     title : "Diwata-2 Amateur Radio Unit (ARU) Utilization Manual",
@@ -24,7 +24,7 @@ const initDownloadFiles = [
       <a href="https://twitter.com/Diwata2PH">https://twitter.com/Diwata2PH</a>
     </p>
     `,
-    downloadLink: "/assets/pdf/test.pdf",
+    downloadLink: "/assets/pdf/dummy.pdf",
   },
 ]
 
