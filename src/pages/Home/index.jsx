@@ -159,11 +159,11 @@ function Home() {
 
       <ul className="timeline">
         <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/24-september-2020/">
+          <a href="https://www3.nhk.or.jp/lnews/kitakyushu/20221128/5020012312.html">
             <label className="timeline__event-icon"></label>
           </a>
           <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/24-september-2020/">
+            <a href="https://www3.nhk.or.jp/lnews/kitakyushu/20221128/5020012312.html">
               <p className="timeline__event-thumbnail">28 November 2022</p>
               <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
@@ -185,11 +185,11 @@ function Home() {
         </li>
 
         <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/06-november-2020/">
+          <a href="https://www.nishinippon.co.jp/item/n/1020892/">
             <label className="timeline__event-icon"></label>
           </a>
           <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/06-november-2020/">
+            <a href="https://www.nishinippon.co.jp/item/n/1020892/">
               <p className="timeline__event-thumbnail">
                 28 November 2022
               </p>
@@ -211,11 +211,11 @@ function Home() {
         </li>
 
         <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/27-november-2020/">
+          <a href="https://www.nikkan.co.jp/articles/view/655659">
             <label className="timeline__event-icon"></label>
           </a>
           <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/27-november-2020/">
+            <a href="https://www.nikkan.co.jp/articles/view/655659">
               <p className="timeline__event-thumbnail">28 November 2022</p>
               <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
