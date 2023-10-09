@@ -7,7 +7,7 @@ const initDownloadFiles = [
   {
     title : "Maya-3 and Maya-4 High Level Specifications",
     content: "",
-    downloadLink: "https://stamina4space.upd.edu.ph/wp-content/uploads/2021/10/Maya-3-Maya-4_-High-level-Specifications.docx-1.pdf",
+    downloadLink: "/assets/pdf/test.pdf",
   },
   {
     title : "Diwata-2 Amateur Radio Unit (ARU) Utilization Manual",
@@ -24,7 +24,7 @@ const initDownloadFiles = [
       <a href="https://twitter.com/Diwata2PH">https://twitter.com/Diwata2PH</a>
     </p>
     `,
-    downloadLink: "https://stamina4space.upd.edu.ph/wp-content/uploads/2020/10/Diwata-2-ARU-Utilization-Manual.pdf",
+    downloadLink: "/assets/pdf/test.pdf",
   },
 ]
 
@@ -63,7 +63,7 @@ function Manuals() {
           <div className="col-lg-3">
             <div className="manuals__search">
               <div className="input-group search-box">
-                <input className="form-control" style={{backgroundColor: "rgb(16, 18, 25)", borderColor: "#212529", border: "1px solid #212529", color: "#fff"}} type="search" placeholder="Search" />
+                <input className="form-control" style={{borderColor: "#212529", border: "1px solid #212529", color: "#fff"}} type="search" placeholder="Search" />
                 <button className="btn btn-outline-dark" type="submit">
                   <i className="fa fa-search"></i>
                 </button>
