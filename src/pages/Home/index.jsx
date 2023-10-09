@@ -164,17 +164,23 @@ function Home() {
           </a>
           <div className="timeline__event-copy">
             <a href="https://stamina4space.upd.edu.ph/timeline/24-september-2020/">
-              <p className="timeline__event-thumbnail">24 September 2020</p>
-              <img className="timeline__img-thumbnail" src=" https://stamina4space.upd.edu.ph/wp-content/uploads/2021/06/STeP-UP-Batch-2-Orientation.png" />
+              <p className="timeline__event-thumbnail">28 November 2022</p>
+              <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
             <p></p>
             <p>
-              <strong>DOST-SEI conducted the scholarship orientation for the accepted 8 graduate students.</strong>
+              <strong>九州工業大学とモンゴル政府や企業 宇宙開発で連携協定</strong>
             </p>
             <p>
-              <span style={{fontWeight: 400}}>The following are part of the second batch of scholars, who successfully passed and admitted to the program by the UP Diliman National Graduate School of Engineering and endorsed to DOST-SEI: <br/> · Alvarez, Anna Ruth <br/> · Co, Joseph Jonathan <br/> · Collamar, Ronald <br/> · Chua, Angela Clarisse <br/> · Doloriel, Chandler Timm <br/> · Macaraeg, Khazmir Camille Valerie <br/> · Remocaldo, Genesis <br/> · Tagabi, Gio Asher </span>
+              <span style={{fontWeight: 400}}>(www3.nhk.or.jp) 北九州市にある九州工業大学は、モンゴルでの宇宙開発のためにモンゴル政府や企業などと連携していくことになり、２８日は、元横綱・白鵬の宮城野親方が立会人となって協定の締結式が行われました。</span>
             </p>
             <p></p>
+            <div className="timeline__more-link">
+              <a href="https://www3.nhk.or.jp/lnews/kitakyushu/20221128/5020012312.html">
+                Learn More &nbsp;
+                <i className="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </li>
 
@@ -184,16 +190,18 @@ function Home() {
           </a>
           <div className="timeline__event-copy">
             <a href="https://stamina4space.upd.edu.ph/timeline/06-november-2020/">
-              <p className="timeline__event-thumbnail">06 November 2020</p>
-              <img className="timeline__img-thumbnail" src=" https://stamina4space.upd.edu.ph/wp-content/uploads/2021/06/Scholars-and-tasks.jpg" />
+              <p className="timeline__event-thumbnail">
+                28 November 2022
+              </p>
+              <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
             <p></p>
             <p>
-              <strong>STeP-UP Batch 2 Scholars Kick-off meeting</strong>
+              <strong>衛星開発で「大金星を」　モンゴルの宇宙ベンチャーと九工大が協定　宮城野親方エール</strong>
             </p>
-            <p>The kickoff meeting aimed to introduce the new batch of scholars to partners and stakeholders of the program, share the plans and ongoing activities of both the first and second batches of the scholars taking the nanosatellite engineering graduate track, and promote and raise awareness on satellite development and space initiatives to encourage the youth to take more interest in space science and technology.</p>
+            <p>(www.nishinippon.co.jp) 九州工業大（北九州市戸畑区）と、同大留学経験者が共同創設者となったモンゴルの宇宙ベンチャー「オンド　スペース」、モンゴル政府の3者は、同国の人工衛星開発を支援する連携協定を結んだ。</p>
             <div className="timeline__more-link">
-              <a href="https://www.up.edu.ph/up-to-train-8-new-filipino-satellite-makers/?fbclid=IwAR0XvcvUJSjb43bFSHdTiyiHJIPHwP-TnCAXiN-pvFL6yv35Vk5fOWTeYrg">
+              <a href="https://www.nishinippon.co.jp/item/n/1020892/">
                 Learn More &nbsp;
                 <i className="fa fa-arrow-right" aria-hidden="true"></i>
               </a>
@@ -208,19 +216,25 @@ function Home() {
           </a>
           <div className="timeline__event-copy">
             <a href="https://stamina4space.upd.edu.ph/timeline/27-november-2020/">
-              <p className="timeline__event-thumbnail">27 November 2020</p>
-              <img className="timeline__img-thumbnail" src=" https://stamina4space.upd.edu.ph/wp-content/uploads/2021/06/STeP-UP-Batch-2_MDR_2.png" />
+              <p className="timeline__event-thumbnail">28 November 2022</p>
+              <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
             <p></p>
             <p>
-              <strong>Mission Design Review (MDR)</strong>
+              <strong>九州工大、宇宙開発でモンゴルと連携</strong>
             </p>
-            <p>Mission Design Review (MDR) of the Maya-5 and Maya-6 cube satellites, where the plans for development were presented by the Batch 2 of the STeP-UP Project scholars.</p>
+            <p>(www.nikkan.co.jp)【北九州】九州工業大学は２８日、モンゴルと卒業生数人が創設に携わった同国のＯＮＤＯスペースと連携協定...</p>
             <p></p>
+            <div className="timeline__more-link">
+              <a href="https://www.nikkan.co.jp/articles/view/655659">
+                Learn More &nbsp;
+                <i className="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </li>
 
-        <li className="timeline__event">
+        {/* <li className="timeline__event">
           <a href="https://stamina4space.upd.edu.ph/timeline/july-8-2021/">
             <label className="timeline__event-icon"></label>
           </a>
@@ -253,9 +267,9 @@ function Home() {
             </p>
             <p></p>
           </div>
-        </li>
+        </li> */}
 
-        <li className="timeline__event">
+        {/* <li className="timeline__event">
           <a href="https://stamina4space.upd.edu.ph/timeline/september-2022-2/">
             <label className="timeline__event-icon"></label>
           </a>
@@ -273,9 +287,9 @@ function Home() {
             </p>
             <p></p>
           </div>
-        </li>
+        </li> */}
 
-        <li className="timeline__event">
+        {/* <li className="timeline__event">
           <a href="https://stamina4space.upd.edu.ph/timeline/19-july-2023/">
             <label className="timeline__event-icon"></label>
           </a>
@@ -297,7 +311,7 @@ function Home() {
             </p>
             <p></p>
           </div>
-        </li>
+        </li> */}
       </ul>
 
       <Footer />
