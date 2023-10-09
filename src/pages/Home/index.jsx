@@ -30,8 +30,6 @@ function Home() {
                   BROWSE MANUALS
                 </button>
               </Link>
-              {/* <a href="#"> */}
-              {/* </a> */}
             </div>
           </div>
         </div>
@@ -194,9 +192,12 @@ function Home() {
               <strong>STeP-UP Batch 2 Scholars Kick-off meeting</strong>
             </p>
             <p>The kickoff meeting aimed to introduce the new batch of scholars to partners and stakeholders of the program, share the plans and ongoing activities of both the first and second batches of the scholars taking the nanosatellite engineering graduate track, and promote and raise awareness on satellite development and space initiatives to encourage the youth to take more interest in space science and technology.</p>
-            <p>
-              <a className="timeline__more-link" href="https://www.up.edu.ph/up-to-train-8-new-filipino-satellite-makers/?fbclid=IwAR0XvcvUJSjb43bFSHdTiyiHJIPHwP-TnCAXiN-pvFL6yv35Vk5fOWTeYrg">Learn More</a>
-            </p>
+            <div className="timeline__more-link">
+              <a href="https://www.up.edu.ph/up-to-train-8-new-filipino-satellite-makers/?fbclid=IwAR0XvcvUJSjb43bFSHdTiyiHJIPHwP-TnCAXiN-pvFL6yv35Vk5fOWTeYrg">
+                Learn More &nbsp;
+                <i className="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
             <p></p>
           </div>
         </li>
@@ -289,7 +290,10 @@ function Home() {
             </p>
             <p>The Philippines’ second batch of locally developed cube satellites (CubeSats) Maya-5 and Maya-6 were successfully released to space from the International Space Station (ISS) on 19 July 2023 at 3:00 p.m. PST as a part of the “Kibo” or Japanese Experiment Module (JEM) Small Satellite Orbital Deployer-26 (J-SSOD-26) CubeSat deployment mission.</p>
             <p>
-              <a className="timeline__more-link" href="https://stamina4space.upd.edu.ph/2023/07/19/ph-built-cube-satellites-maya-5-and-maya-6-deployed-to-space//">Learn More</a>
+              <a className="timeline__more-link" href="https://stamina4space.upd.edu.ph/2023/07/19/ph-built-cube-satellites-maya-5-and-maya-6-deployed-to-space//">
+                Learn More &nbsp;
+                <i className="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
             </p>
             <p></p>
           </div>

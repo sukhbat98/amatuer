@@ -15,11 +15,11 @@ function Footer() {
           <div className="row__large-4 site-footer__right">
             <p>General Inquiries</p>
             <div className="site-footer__info">
-              info@stamina4space.upd.edu.ph
+              info@ondosat.com
             </div>
             <div className="site-footer__text">
               For specific inquiries addressed to the different <br /> project teams, check out our
-              <a href="/contact-us-page" target="_blank">Contact Page</a>
+              <a href="/contact-us-page" target="_blank"> Contact Page</a>
               .
             </div>
             <div className="site-footer__social-title">Follow us</div>

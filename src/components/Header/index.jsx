@@ -7,7 +7,8 @@ function Header() {
   const [isToggle, setIsToggle] = useState(false)
 
   useEffect(() => {
-    window.addEventListener("scroll", throttle(() => runOnScroll(),  200))
+    // TODO: scroll ажиллах үед header хэсгийн background color өөрчлөгддөн болгож сайжруулах
+    // window.addEventListener("scroll", throttle(() => runOnScroll(),  200))
   }, [])
 
   function runOnScroll() {
@@ -29,7 +30,7 @@ function Header() {
     <nav className={headerClassName}>
       <div className="navbar__container-fluid">
         <a href="/" className="navbar__brand">
-          <img alt="" src="/images/ondo.svg" />
+          <img alt="" src="/ondo.svg" />
         </a>
         <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
           <div className="navbar__toggler-menu">

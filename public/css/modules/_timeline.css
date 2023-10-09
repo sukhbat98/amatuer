@@ -50,7 +50,11 @@
 
     a {
       text-emphasis: none;
-      color: #0f0d0d;
+      color: $mainPink;
+    }
+
+    a:hover {
+      color: $mainPinkHover !important;
     }
 
   }
@@ -95,12 +99,17 @@
     color: $mainBlack !important;
     font-size: 0.75em;
     background-color: #fff;
-    -moz-box-shadow: inset 0 0 0 0em #1a93b0;
-    -webkit-box-shadow: inset 0 0 0 0em #1a93b0;
-    box-shadow: inset 0 0 0 0em #1a93b0;
+    -moz-box-shadow: inset 0 0 0 0em #fff;
+    -webkit-box-shadow: inset 0 0 0 0em #fff;
+    box-shadow: inset 0 0 0 0em #fff;
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
+
+    &:hover {
+      background-color: $mainPinkHover;
+      color: #fff !important;
+    }
 
   }
 
@@ -120,19 +129,9 @@
     line-height: 19px !important;
     letter-spacing: 0.05em !important;
     text-transform: uppercase !important;
-    color: #2ab7d9 !important;
+    color: $mainPink !important;
     position: relative !important;
 
-    &::after {
-      content: '';
-      background-image: url(//stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/arrow-right.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      position: absolute;
-      top: 0;
-      width: 20px;
-      height: 20px;
-    }
   }
 
   @mixin atLarge {
