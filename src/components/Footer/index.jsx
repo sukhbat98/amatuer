@@ -25,11 +25,11 @@ function Footer() {
             <div className="site-footer__social-title">Follow us</div>
             <div className="site-footer__social-icons">
               <div className="site-footer__social-item">
-                <a target="_blank" href="https://www.facebook.com/STAMINA4Space/">
+                <a target="_blank" href="https://www.facebook.com/ondospace.co">
                   <img className="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/facebook.png" />
                 </a>
               </div>
-              <div className="site-footer__social-item">
+              {/* <div className="site-footer__social-item">
                 <a target="_blank" href="https://twitter.com/stamina4space?lang=en">
                   <img src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/twitter.png" />
                 </a>
@@ -38,7 +38,7 @@ function Footer() {
                 <a target="_blank" href="https://www.instagram.com/stamina4space/?hl=en">
                   <img src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/instagram.png" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
