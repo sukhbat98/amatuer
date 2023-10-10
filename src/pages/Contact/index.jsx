@@ -1,9 +1,60 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 
+const initProjects = [
+  {
+    icon: "fa fa-eye",
+    title: "PROJECT 1: OPTIKAL",
+    email: 'optikal.s4sprogram@gmail.com',
+    address: 'National Institute of Physics, University of the Philippines Diliman, Quezon City, Philippines',
+    phone: '8981-8500 loc 3707',
+  },
+  {
+    icon: "fa fa-wrench",
+    title: "PROJECT 2: PHL-50",
+    email: 'project-phl50@stamina4space.upd.edu.ph',
+    address: 'University Laboratory for Small Satellites and Space Engineering Systems Building 1 (ULyS³ES-1), Electrical and Electronics Engineering Institute, University of the Philippines Diliman, Quezon City, Philippines',
+    phone: '8981-8500 loc 3305',
+  },
+]
+
 function Contact() {
+  const [projects, setProjects] = useState(initProjects)
+
+  const displayProjects = useMemo(() => {
+    if (projects.length === 0) {
+      return null
+    }
+
+    let returnValue = []
+    projects.map((project, idx) => {
+      returnValue.push(
+        <div key={idx} className="contact__body-box-item col-md-6 contact__box">
+          <div className="contact__body-box-item-title">
+            <div className='pe-2'>
+              <i className={project.icon} aria-hidden="true"></i>
+            </div>
+            <div className='text-white'>
+              {project.title}
+            </div>
+          </div>
+          <div className="contact__body-box-item-email">
+            <b>Email:</b> <br/> {project.email}
+          </div>
+          <div className="contact__body-box-item-address">
+            <b>Address:</b> <br/> {project.address}
+          </div>
+          <div className="contact__body-box-item-number">
+            <b>Telephone Number:</b> <br/> {project.phone}
+          </div>
+        </div>
+      )
+    })
+
+    return returnValue
+  }, projects)
 
   return (
     <>
@@ -32,45 +83,7 @@ function Contact() {
               For inquiries specific to the different project teams:
             </div>
             <div className="contact__body-box row">
-              <div className="contact__body-box-item col-md-6 contact__box">
-                <div className="contact__body-box-item-title">
-                  <div className='pe-2'>
-                    <i className="fa fa-eye" aria-hidden="true"></i>
-                  </div>
-                  <div className='text-white'>
-                    PROJECT 1: OPTIKAL
-                  </div>
-                </div>
-                <div className="contact__body-box-item-email">
-                  <b>Email:</b> <br/> optikal.s4sprogram@gmail.com
-                </div>
-                <div className="contact__body-box-item-address">
-                  <b>Address:</b> <br/> National Institute of Physics, University of the Philippines Diliman, Quezon City, Philippines
-                </div>
-                <div className="contact__body-box-item-number">
-                  <b>Telephone Number:</b> <br/> 8981-8500 loc 3707
-                </div>
-              </div>
-
-              <div className="contact__body-box-item col-md-6 contact__box">
-                <div className="contact__body-box-item-title">
-                  <div className='pe-2'>
-                    <i className="fa fa-eye" aria-hidden="true"></i>
-                  </div>
-                  <div className='text-white'>
-                    PROJECT 1: OPTIKAL
-                  </div>
-                </div>
-                <div className="contact__body-box-item-email">
-                  <b>Email:</b> <br/> optikal.s4sprogram@gmail.com
-                </div>
-                <div className="contact__body-box-item-address">
-                  <b>Address:</b> <br/> National Institute of Physics, University of the Philippines Diliman, Quezon City, Philippines
-                </div>
-                <div className="contact__body-box-item-number">
-                  <b>Telephone Number:</b> <br/> 8981-8500 loc 3707
-                </div>
-              </div>
+              {displayProjects}
             </div>
           </div>
         </div>
