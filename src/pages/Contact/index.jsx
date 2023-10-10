@@ -20,7 +20,7 @@ function Contact() {
                   info@ondosat.com
                 </a>
               </div>
-              <div class="contact__head-sub-social">
+              <div className="contact__head-sub-social">
                 <a target="_blank" href="https://www.facebook.com/ondospace.co">
                   <i className="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>

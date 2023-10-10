@@ -93,4 +93,8 @@
     padding-bottom: 12px;
   }
 
+  @mixin atLarge {
+    padding: 150px 0;
+  }
+
 }
