@@ -55,11 +55,19 @@
 
   &__social-icons {
     display: flex;
-    margin-top: 17.5px;
+    margin-top: 1rem;
   }
 
   &__social-item {
     margin-right: 15px;
+
+    a {
+      color: $mainWhite;
+    }
+
+    i {
+      font-size: 1.25rem;
+    }
   }
 
 }

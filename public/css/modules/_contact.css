@@ -1,0 +1,96 @@
+.contact {
+  padding: 100px 0;
+
+  &__head {
+
+    &-title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: $mainWhite;
+    }
+
+    &-sub {
+
+      @mixin atLarge {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-email {
+        margin-top: 20px;
+
+        a {
+          color: $mainWhite;
+        }
+      }
+
+      &-social {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        color: $mainWhite;
+
+        a {
+          color: $mainWhite;
+        }
+
+        i {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  &__body {
+
+    &-title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: $mainWhite;
+    }
+
+    &-box {
+
+      &-item {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: $mainWhite;
+
+        &-title {
+          display: flex;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: $mainWhite;
+        }
+
+        &-email {
+          margin: 36px 0 20px;
+        }
+
+        &-address {
+          margin-bottom: 20px;
+        }
+
+        &-number {
+
+        }
+      }
+    }
+  }
+
+  &__box {
+    border: 20px solid transparent;
+    background-clip: padding-box;
+    background-color: $mainDark;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+}

@@ -1,6 +1,7 @@
 import throttle from 'lodash/throttle';
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [IsScrolled, setIsScrolled] = useState(false)
@@ -42,10 +43,14 @@ function Header() {
         <div className={`navbar__collapse ${!isToggle && 'navbar__is-visible' }`} id="navbarNav">
           <ul id="menu-primary-header-menu" className="navbar__nav">
             <li id="menu-item-home" className="navbar__nav-link">
-              <a href="https://stamina4space.upd.edu.ph/">Home</a>
+              <Link to="/">
+                Home
+              </Link>
             </li>
             <li id="menu-item-96" className="navbar__nav-link">
-              <a href="https://stamina4space.upd.edu.ph/contact-us-page/">Contact Us</a>
+              <Link to="/contact">
+                Contact us
+              </Link>
             </li>
           </ul>
         </div>
