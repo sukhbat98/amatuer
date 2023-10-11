@@ -5,6 +5,7 @@
   height: 100%;
   align-items: center;
   padding: 40px 50px;
+  background-image: url("https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/satellite-bg.png");
 
   &__image {
     width: 100%;

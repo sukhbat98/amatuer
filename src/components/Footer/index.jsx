@@ -19,7 +19,7 @@ function Footer() {
             </div>
             <div className="site-footer__text">
               For specific inquiries addressed to the different <br /> project teams, check out our
-              <a href="/contact-us-page" target="_blank"> Contact Page</a>
+              <a href="/contact" target="_blank"> Contact Page</a>
               .
             </div>
             <div className="site-footer__social-title">Follow us:</div>

@@ -9,8 +9,8 @@
   position: fixed;
 
   img {
-    max-width: 64px;
-    height: auto;
+    max-height: 28px;
+    width: auto;
     margin: 0 3px;
   }
 

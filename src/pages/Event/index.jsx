@@ -8,10 +8,9 @@ function Event() {
   return (
     <>
       <Header />
-
       {/* middle */}
-      <div className="event">
-        Hi? TserenSodnom
+      <div>
+        Event
       </div>
 
       <Footer />

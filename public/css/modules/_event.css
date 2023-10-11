@@ -1,3 +1,9 @@
 .event {
   padding: 150px 0;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
