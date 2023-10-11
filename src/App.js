@@ -8,6 +8,7 @@ import {
 import Home from '@pages/Home';
 import Manuals from '@pages/Manuals';
 import Contact from '@pages/Contact';
+import Event from '@pages/Event'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     path: "contact",
     element: <Contact />,
   },
+  {
+    path: "event",
+    element: <Event />
+  }
 ]);
 
 function App() {
