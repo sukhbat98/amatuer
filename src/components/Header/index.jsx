@@ -1,45 +1,36 @@
-import throttle from 'lodash/throttle';
-
-import React, { useEffect, useState } from "react";
+import React, { useDebugValue, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
-  const [IsScrolled, setIsScrolled] = useState(false)
+const Header = () => {
   const [isToggle, setIsToggle] = useState(false)
 
   useEffect(() => {
-    // TODO: scroll ажиллах үед header хэсгийн background color өөрчлөгддөн болгож сайжруулах
-    // window.addEventListener("scroll", throttle(() => runOnScroll(),  200))
+    window.addEventListener("click", handleToggleBtn)
   }, [])
 
-  function runOnScroll() {
-    if (window.scrollY > 60) {
-      setIsScrolled(true)
-    } else {
-      setIsScrolled(false)
+  const handleToggleBtn = (e) => {
+    if (e.target.className.includes("navbar__toggler")) {
+      setIsToggle((isToggle) => {
+        return !isToggle
+      })
     }
   }
 
-  const handleToggleBtn = () => {
-    setIsToggle(!isToggle)
-  }
-
-  // classes
-  let headerClassName = IsScrolled ? "navbar navbar__header-dark" : "navbar"
-
   return (
-    <nav className={headerClassName}>
+    <nav className="navbar">
       <div className="navbar__container-fluid">
-        <a href="https://ondospace.com" className="navbar__brand">
-          <img className='lazyload' alt="ONDO-SPACE" src="/ondo.svg" />
-        </a>
-        <a href="https://ondo.mn" className="navbar__brand">
-          <img className='lazyload' alt="ONDO-SPACE" src="/images/ondo-logo.svg" />
-        </a>
-        <a href="http://www.mrsf.mn/" className="navbar__brand">
-          <img className='lazyload' alt="ONDO-SPACE" src="images/mrsf-logo.png" />
-        </a>
-        <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
+        <div className="navbar__brand">
+          <a href="https://ondospace.com">
+            <img className='lazyload' alt="ONDO-SPACE" src="/ondo.svg" />
+          </a>
+          <a href="https://ondo.mn">
+            <img className='lazyload' alt="ONDO-SPACE" src="/images/ondo-logo.svg" />
+          </a>
+          <a href="http://www.mrsf.mn/">
+            <img className='lazyload' alt="ONDO-SPACE" src="images/mrsf-logo.png" />
+          </a>
+        </div>
+        <button className="navbar__toggler" type="button" onClick={handleToggleBtn}>
           <div className="navbar__toggler-menu">
             <div className="navbar__toggler-menu-bar"></div>
             <div className="navbar__toggler-menu-bar"></div>

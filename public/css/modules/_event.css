@@ -1,5 +1,5 @@
 .event {
-  padding: 150px 0;
+  margin: 150px auto;
 
   &__title {
     font-weight: bold;

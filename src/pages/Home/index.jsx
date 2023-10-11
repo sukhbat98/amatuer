@@ -13,7 +13,7 @@ function Home() {
       <div className="row large-hero" style={{margin: "0px"}}>
         <div className="row__large-6">
           <picture>
-            <img className="large-hero__image lazyload" src={`/images/maya-5.png`} alt="Ocean view" />
+            <img className="large-hero__image lazyload" src={`/images/sat-1.png`} alt="Ocean view" />
           </picture>
         </div>
         <div className="row__large-6">

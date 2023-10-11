@@ -6,15 +6,19 @@ import Footer from "@components/Footer";
 function Event() {
 
   return (
-    <>
+    <div className="row">
       <Header />
       {/* middle */}
-      <div>
-        Event
+      <div className="container event">
+        <div className="row">
+          <div className="event__title">
+            Events
+          </div>
+        </div>
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 
