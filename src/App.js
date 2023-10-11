@@ -9,6 +9,7 @@ import Home from '@pages/Home';
 import Manuals from '@pages/Manuals';
 import Contact from '@pages/Contact';
 import Event from '@pages/Event'
+import Amatuer from '@pages/Amatuer';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
   {
     path: "event",
     element: <Event />
-  }
+  },
+  {
+    path: "amatuer",
+    element: <Amatuer />
+  },
 ]);
 
 function App() {

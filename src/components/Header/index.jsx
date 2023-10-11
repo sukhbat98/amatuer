@@ -53,6 +53,16 @@ function Header() {
                 Home
               </Link>
             </li>
+            <li id="menu-item-home" className="navbar__nav-link">
+              <Link to="/event">
+                Event
+              </Link>
+            </li>
+            <li id="menu-item-home" className="navbar__nav-link">
+              <Link to="/amatuer">
+                Amatuer
+              </Link>
+            </li>
             <li id="menu-item-96" className="navbar__nav-link">
               <Link to="/contact">
                 Contact us
