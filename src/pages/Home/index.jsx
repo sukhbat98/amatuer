@@ -13,7 +13,7 @@ function Home() {
       <div className="row large-hero" style={{margin: "0px"}}>
         <div className="row__large-6">
           <picture>
-            <img className="large-hero__image" src={`/images/maya-5.png`} alt="Ocean view" />
+            <img className="large-hero__image lazyload" src={`/images/maya-5.png`} alt="Ocean view" />
           </picture>
         </div>
         <div className="row__large-6">
@@ -163,7 +163,7 @@ function Home() {
           <div className="timeline__event-copy">
             <a href="https://www3.nhk.or.jp/lnews/kitakyushu/20221128/5020012312.html">
               <p className="timeline__event-thumbnail">28 November 2022</p>
-              <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
+              <img className="timeline__img-thumbnail lazyload" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
             <p></p>
             <p>
@@ -191,7 +191,7 @@ function Home() {
               <p className="timeline__event-thumbnail">
                 28 November 2022
               </p>
-              <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
+              <img className="timeline__img-thumbnail lazyload" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
             <p></p>
             <p>
@@ -215,7 +215,7 @@ function Home() {
           <div className="timeline__event-copy">
             <a href="https://www.nikkan.co.jp/articles/view/655659">
               <p className="timeline__event-thumbnail">28 November 2022</p>
-              <img className="timeline__img-thumbnail" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
+              <img className="timeline__img-thumbnail lazyload" src="https://www.nishinippon.co.jp/uploads/image/1457174/large_IP221128JAA000225000.jpg" />
             </a>
             <p></p>
             <p>
@@ -232,84 +232,6 @@ function Home() {
           </div>
         </li>
 
-        {/* <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/july-8-2021/">
-            <label className="timeline__event-icon"></label>
-          </a>
-          <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/july-8-2021/">
-              <p className="timeline__event-thumbnail">July 8, 2021</p>
-              <img data-src=" https://stamina4space.upd.edu.ph/wp-content/uploads/2021/07/Screenshot-303.png" className="timeline__img-thumbnail" src=" https://stamina4space.upd.edu.ph/wp-content/uploads/2021/07/Screenshot-303.png" />
-            </a>
-            <p></p>
-            <p>
-              <b>Preliminary Design Review (PDR)</b>
-            </p>
-            <p>Preliminary Design Review (PDR) of the Maya-5 and Maya-6 cube satellites presented to the STAMINA4Space Program and stakeholders.</p>
-            <p></p>
-          </div>
-        </li>
-
-        <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/august-2022/">
-            <label className="timeline__event-icon"></label>
-          </a>
-          <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/august-2022/">
-              <p className="timeline__event-thumbnail">August 2022</p>
-              <img className="timeline__img-thumbnail" src=" https://stamina4space.upd.edu.ph/wp-content/uploads/2022/11/A-1-scaled.jpg" />
-            </a>
-            <p></p>
-            <p>
-              <strong> Scholars go to Japan for Maya-5 and Maya-6 CubeSat Testing </strong>
-            </p>
-            <p></p>
-          </div>
-        </li> */}
-
-        {/* <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/september-2022-2/">
-            <label className="timeline__event-icon"></label>
-          </a>
-          <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/september-2022-2/">
-              <p className="timeline__event-thumbnail">September 2022</p>
-              <img className="img-thumbnail" src="https://stamina4space.upd.edu.ph/wp-content/uploads/2022/11/307123717_3216772658581831_8149970886562737132_n.jpg" />
-            </a>
-            <p></p>
-            <p>
-              <strong> Maya-3 &amp; Maya-4 testing phase in Japan completed </strong>
-              <br/> The 2nd Batch of STeP-UP Scholars completes the sandwich program under the Master of Science (MS) and Master of Engineering (MEng) in Electrical Engineering – nanosatellite engineering track of the UP Electrical and Electronics Engineering Institute. This scholarship is an initiative of our Space Science and Technology Proliferation through University Partnerships (STeP-UP) Project and supported by the&nbsp;Science Education Institute – Department of Science and Technology.
-            </p>
-            <p>The sandwich program in Japan includes satellite environmental test training, Maya-5 &amp; 6 cube satellites’ final assembly, and flight model(FM) tests. <br/>
-            </p>
-            <p></p>
-          </div>
-        </li> */}
-
-        {/* <li className="timeline__event">
-          <a href="https://stamina4space.upd.edu.ph/timeline/19-july-2023/">
-            <label className="timeline__event-icon"></label>
-          </a>
-          <div className="timeline__event-copy">
-            <a href="https://stamina4space.upd.edu.ph/timeline/19-july-2023/">
-              <p className="timeline__event-thumbnail">19 July 2023</p>
-              <img className="timeline__img-thumbnail" src="https://stamina4space.upd.edu.ph/wp-content/uploads/2023/07/m5m6.jpg" />
-            </a>
-            <p></p>
-            <p>
-              <strong>PH-built cube satellites, Maya-5 and Maya-6, deployed to space</strong>
-            </p>
-            <p>The Philippines’ second batch of locally developed cube satellites (CubeSats) Maya-5 and Maya-6 were successfully released to space from the International Space Station (ISS) on 19 July 2023 at 3:00 p.m. PST as a part of the “Kibo” or Japanese Experiment Module (JEM) Small Satellite Orbital Deployer-26 (J-SSOD-26) CubeSat deployment mission.</p>
-            <p>
-              <a className="timeline__more-link" href="https://stamina4space.upd.edu.ph/2023/07/19/ph-built-cube-satellites-maya-5-and-maya-6-deployed-to-space//">
-                Learn More &nbsp;
-                <i className="fa fa-arrow-right" aria-hidden="true"></i>
-              </a>
-            </p>
-            <p></p>
-          </div>
-        </li> */}
       </ul>
 
       <Footer />

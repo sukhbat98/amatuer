@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 const initDownloadFiles = [
   {
@@ -75,12 +75,11 @@ function Manuals() {
         {/* download files */}
         <div className="manuals__wrapper">
           <div className="manuals__download-items-container">
-            {/* {displayDownloadFiles} */}
             {
               downloadFiles.map((downloadFile, idx) => (
                 <div key={idx} className="manuals__download-item row mb-3">
                   <div className="manuals__download-icon col-lg-1">
-                    <img alt="123" className="" src="https://stamina4space.upd.edu.ph/wp-content/themes/stamina4space/assets/images/dl-icon.png" />
+                    <i className="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
                   </div>
                   <div className="col-lg-10">
                     <div className="manuals__download-item-title my-2">{downloadFile.title}</div>

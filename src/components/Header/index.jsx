@@ -31,7 +31,7 @@ function Header() {
     <nav className={headerClassName}>
       <div className="navbar__container-fluid">
         <a href="/" className="navbar__brand">
-          <img alt="" src="/ondo.svg" />
+          <img className='lazyload' alt="ONDO-SPACE" src="/ondo.svg" />
         </a>
         <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
           <div className="navbar__toggler-menu">

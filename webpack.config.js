@@ -36,6 +36,7 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       process: 'process/browser',
+      lazyload: "lazyload",
     }),
     new CopyPlugin({
       patterns: [
