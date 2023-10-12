@@ -1,42 +1,31 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import {
-  Link,
-  RouterProvider,
-  createBrowserRouter,
+  Route,
+  Routes,
 } from "react-router-dom";
 
-import Home from '@pages/Home';
-import Manuals from '@pages/Manuals';
-import Contact from '@pages/Contact';
-import Event from '@pages/Event'
-import Amatuer from '@pages/Amatuer';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "manuals",
-    element: <Manuals />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
-  },
-  {
-    path: "event",
-    element: <Event />
-  },
-  {
-    path: "amatuer",
-    element: <Amatuer />
-  },
-]);
+const Home = lazy(() => import("@pages/Home"))
+const Manuals = lazy(() => import("@pages/Manuals"))
+const Contact = lazy(() => import("@pages/Contact"))
+const Event = lazy(() => import("@pages/Event"))
+const Amatuer = lazy(() => import("@pages/Amatuer"))
+const NotFound = lazy(() => import("@pages/NotFound"))
 
 function App() {
+
   return (
-    <RouterProvider router={router}></RouterProvider>
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path='*' element={<NotFound />} />
+          <Route path='/' element={<Home />}/>
+          <Route path='/manuals' element={<Manuals />}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/event' element={<Event />}/>
+          <Route path='/amatuer' element={<Amatuer />}/>
+        </Routes>
+      </Suspense>
+    </div>
   );
 }
 

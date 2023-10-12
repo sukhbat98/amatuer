@@ -1,0 +1,7 @@
+.not-found {
+  margin: 8rem auto;
+
+  @mixin atLarge {
+    margin: 12.5rem auto;
+  }
+}

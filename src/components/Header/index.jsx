@@ -4,20 +4,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isToggle, setIsToggle] = useState(false)
 
-  useEffect(() => {
-    window.addEventListener("click", handleToggleBtn)
-  }, [])
-
-  const handleToggleBtn = (e) => {
-    if (e.target.className.includes("navbar__toggler")) {
-      setIsToggle((isToggle) => {
-        return !isToggle
-      })
-    }
+  const handleToggleBtn = () => {
+    setIsToggle(!isToggle)
   }
 
   return (
-    <nav className="navbar">
+    <header className="navbar">
       <div className="navbar__container-fluid">
         <div className="navbar__brand">
           <a href="https://ondospace.com">
@@ -30,7 +22,7 @@ const Header = () => {
             <img className='lazyload' alt="ONDO-SPACE" src="images/mrsf-logo.png" />
           </a>
         </div>
-        <button className="navbar__toggler" type="button" onClick={handleToggleBtn}>
+        <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
           <div className="navbar__toggler-menu">
             <div className="navbar__toggler-menu-bar"></div>
             <div className="navbar__toggler-menu-bar"></div>
@@ -40,9 +32,9 @@ const Header = () => {
         <div className={`navbar__collapse ${!isToggle && 'navbar__is-visible' }`} id="navbarNav">
           <ul id="menu-primary-header-menu" className="navbar__nav">
             <li id="menu-item-home" className="navbar__nav-link">
-              <Link to="/">
+              <a href="/">
                 Home
-              </Link>
+              </a>
             </li>
             {/* <li id="menu-item-home" className="navbar__nav-link">
               <Link to="/event">
@@ -50,19 +42,19 @@ const Header = () => {
               </Link>
             </li> */}
             <li id="menu-item-home" className="navbar__nav-link">
-              <Link to="/amatuer">
+              <a href="/amatuer">
                 Amatuer
-              </Link>
+              </a>
             </li>
             <li id="menu-item-96" className="navbar__nav-link">
-              <Link to="/contact">
+              <a href="/contact">
                 Contact us
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
   )
 }
 

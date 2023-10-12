@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <>
-      <div className="site-footer">
+      <footer className="site-footer">
         <div className="site-footer__container">
           <div className="row__large-7">
             <div className="site-footer__img">
@@ -32,7 +32,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   )
 }
