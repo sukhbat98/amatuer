@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Routes>
           <Route path='*' element={<NotFound />} />
           <Route path='/' element={<Home />}/>
