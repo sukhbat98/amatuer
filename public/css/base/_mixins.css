@@ -16,6 +16,12 @@
   }
 }
 
+@define-mixin atEventImgMedium {
+  @media (min-width: 400px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin clearfix {
   &::after {
     content: "";
