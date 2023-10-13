@@ -143,34 +143,36 @@ function Event() {
 
       {/* main containt */}
       <div className="row mx-0">
-        <div className="container event">
+        <div className="event">
           <div className="event__title">
             Events
           </div>
           <div className="event__gallery row">
-            <Swiper
-              {...swiperOptions}
-              modules={[Autoplay, Controller]}
-              onSwiper={setFirstSwiper}
-              controller={{ control: secondSwiper }}
-            >
-              {displayHeaderSwiper}
-            </Swiper>
+            <div className="col-md-6 col-sm-12">
+              <Swiper
+                {...swiperOptions}
+                modules={[Autoplay, Controller]}
+                onSwiper={setFirstSwiper}
+                controller={{ control: secondSwiper }}
+              >
+                {displayHeaderSwiper}
+              </Swiper>
+            </div>
+            <div className="col-md-6 col-sm-12">
+              <Swiper
+                loop={true}
+                modules={[Controller]}
+                onSwiper={setSecondSwiper}
+                controller={{ control: firstSwiper }}
+                className="mx-1 mt-2"
+              >
+                {displaySwiperImg}
+              </Swiper>
+              <div className="row mb-5">
+                {displayFooter}
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="d-flex justify-content-center">
-          <Swiper
-            loop={true}
-            modules={[Controller]}
-            onSwiper={setSecondSwiper}
-            controller={{ control: firstSwiper }}
-            className="mx-1 mb-2 mt-2"
-          >
-            {displaySwiperImg}
-          </Swiper>
-        </div>
-        <div className="row mb-5">
-          {displayFooter}
         </div>
       </div>
 
