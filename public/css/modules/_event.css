@@ -1,9 +1,82 @@
 .event {
-  margin: 150px auto;
+  padding-top: 140px;
 
   &__title {
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
   }
+
+  &__gallery {
+    display: flex;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  &__nav-date-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__date-container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+  }
+
+  &__date-content-container {
+    width: 400px;
+  }
+
+  &__main-date {
+    color: $mainPink;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 45px;
+    text-align: center;
+    transition: font 0.3s ease;
+  }
+
+  &__date-myear {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #dadada;
+    display: inline-block;
+  }
+
+  &__date-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $mainPink;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: start;
+  }
+
+  &__date-content {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: start;
+  }
+
+
+  &__swiper-img {
+    height: 100%;
+
+    @mixin atEventImgMedium {
+      height: 82%;
+      width: 400px;
+    }
+  }
+
 }
