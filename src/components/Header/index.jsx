@@ -47,10 +47,15 @@ const Header = () => {
               </a>
             </li>
             <li id="menu-item-96" className="navbar__nav-link">
+              <a href="/manuals">
+                Manuals
+              </a>
+            </li>
+            {/* <li id="menu-item-96" className="navbar__nav-link">
               <a href="/contact">
                 Contact us
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -18,10 +18,10 @@ function Home() {
         </div>
         <div className="row__large-6">
           <h1 className="large-hero__name">
-            Maya-5 and Maya-6
+            OWLSAT- 1 and OWLSAT-2  /Big font/
           </h1>
           <p className="large-hero__text">
-            Maya-5 and Maya-6 are the second set of Philippine university-built CubeSats, currently being developed by the second batch of STeP-UP scholars. The project aims to gain and locally extend the knowledge and skills on satellite development acquired from foreign schooling and utilize the domestic capabilities for satellite development. The two cube satellites share the same bus but differ in mission payload. Maya-5 has the same mission payload as that of the Maya-2, and Maya-6 has the experimental on-board computer (OBC-EX) mission payload, which controls the attitude determination and control system (ADCS) and hentenna (HNT) missions. The development of Maya-5 and Maya-6 aims to continue and build on the country’s initiatives on satellite development while transitioning to locally available components and fabricated boards, and manufactured structural frames by designing, building, testing, launching, and operating satellites that will serve as the heritage for future CubeSat missions.
+            ONDOSAT-OWL-1 is a 0.5U cubesat and will be the first satellite of collabration project of ondo space llc and Mongolian Radio Sport Federation (MRSF).  ONDOSAT-OWL-1 is a part of the ONDOSAT-OWL CubeSat constellation of two satellites, along with ONDOSAT-OWL-1 and ONDOSAT-OWL-2.Main mission provides a message store-and-forward capability to the amateur operators on amatuer UHF band.The mission objective is to demonstrate S&F operations, including scheduled and unscheduled uplink of S&F data from amateur radio operators in Mongolia and all over the globe. The data will be stored onboard and transmitted to compatible ground stations in Mongolia. The purpose of the mission is to provide the amateur radio community in Mongolia with a reliable satellite platform to evaluate their uplink equipment by sending S&F messages to the satellite and validate a successful downlinks. Besides this mission, The ONDOSAT-OWL CubeSats are to broadcast encrypted short messages through its beacon within the 435-438MHz frequency band. This mission offers the amateur radio community the chance to decode these messages using a publicly accessible key provided on the official ONDOSAT-OWL website. Accomplished individuals who successfully decrypt the messages will be recognized on the official website and will receive a special QSL card as a token of achievement from the ONDOSAT-OWL project.
           </p>
           <div className="large-hero__button">
             <a href="manuals">
@@ -35,7 +35,7 @@ function Home() {
 
       <div className="overview">
         <div className="overview__container">
-          <h1 className="overview__name-small">Maya-5 and Maya-6 overview</h1>
+          <h1 className="overview__name-small">OWLSAT- 1 and OWLSAT-2  overview  /Big font/</h1>
           <table className="overview__table">
             <tbody>
               <tr>
@@ -51,7 +51,7 @@ function Home() {
                   <div className="overview__table-text">Mass</div>
                 </td>
                 <td>
-                  <div className="overview__table-text">-1 kg</div>
+                  <div className="overview__table-text">0.9kg</div>
                 </td>
               </tr>
               <tr>
@@ -67,7 +67,7 @@ function Home() {
                   <div className="overview__table-text">Dimensions</div>
                 </td>
                 <td>
-                  <div className="overview__table-text">10cm x 10 cm x 10 cm (Stowed State)</div>
+                  <div className="overview__table-text">10cm x 10 cm x 5 cm (Stowed State)</div>
                 </td>
               </tr>
               <tr>
@@ -84,23 +84,18 @@ function Home() {
                 </td>
                 <td className="overview__table-text">
                   <ul>
-                    <li> Mission Board 1 <ul>
-                        <li> Maya-5 <ul>
-                            <li> Attitude Determination and Control System (ADCS), which is the primary source of attitude information of the satellite </li>
-                            <li> Hentenna (HNT), which is an experimental communication system that uses the satellite structure as an antenna </li>
-                          </ul>
-                        </li>
-                        <li> Maya-6 <ul>
-                            <li> Experimental on-board computer (OBC-EX), an original development of the STeP-UP project. The goal of the OBC-EX is to become a foundation for future CubeSats, which will have an integrated system that can act as a secondary on-board computer, determine and control the satellite’s attitude, and use the satellite’s structure as a communication system to the ground station. </li>
-                          </ul>
-                        </li>
+                    <li>Mission Board:
+                      <ul>
+                        <li> Store-and-Forward (S&F) mission for the amateur operators on amatuer UHF band </li>
+                        <li> Camera Mission (OVCAM), which will capture images of the Earth from space </li>
+                        <li> Remote sensor mission based on low-power RF module for demonstration of remote data collection, in order to monitor enviromental hazards in remote areas of Mongolia </li>
                       </ul>
                     </li>
-                    <li>Mission Board 2 (Maya-5 and Maya-6) <ul>
-                        <li> Camera Mission (CAM), which will capture images of the Earth from space </li>
-                        <li> Image Classification Unit (ICU) mission, which is an on-board image processor that uses Machine Learning to classify the images taken by the Camera Mission </li>
-                        <li> Automatic Packet Reporting System- Digipeater (APRS-DP), which is an amateur radio based, real-time, local and digital communication system which can receive packets, process them and retransmit them back on the same frequency </li>
-                        <li> Store and Forward (S&amp;F) mission, which collects data from specific distributed sensors all around remote locations on Earth, “stores” them in the CubeSat and “forwards” it to a designated ground station once it passes over it </li>
+                    <li>Main Boards:
+                      <ul>
+                        <li> Experimental on-board computer (OBC), an original research & development of the ONDOSAT-OBC, The goal of the new OBC is to become a foundation for future CubeSats. </li>
+                        <li> Experimental Passive attitude control system </li>
+                        <li> Experimental Electrical Power System (EPS), an original research & development of the ONDOSAT-EPS </li>
                       </ul>
                     </li>
                   </ul>
@@ -111,7 +106,7 @@ function Home() {
                   <div className="overview__table-text">Launch</div>
                 </td>
                 <td>
-                  <div className="overview__table-text">Target: 2022 </div>
+                  <div className="overview__table-text">Target: 2024 Q1 </div>
                 </td>
               </tr>
               <tr>
@@ -128,12 +123,11 @@ function Home() {
                 </td>
                 <td>
                   <ul>
-                    <li className="overview__table-text"> To give continuity to two missions; Imaging Mission (CAM) and Store &amp; Forward (SF-WARD) </li>
-                    <li className="overview__table-text"> To serve the Amateur radio community with APRS-Digipeater mission (APRS-DP) </li>
-                    <li className="overview__table-text"> To design, build, test and demonstrate Experimental On-Board Computer (OBC-EX) </li>
-                    <li className="overview__table-text"> To demonstrate CubeSat structure as antenna (HNT) </li>
-                    <li className="overview__table-text"> To demonstrate the on-board image classification unit (ICU) </li>
-                    <li className="overview__table-text"> To expand database of COTS components useful in space applications (TMCR) </li>
+                    <li className="overview__table-text"> To give continuity to two missions; Imaging Mission (OVCAM) and Store & Forward (S&F) mission </li>
+                    <li className="overview__table-text"> To serve the Amateur radio community with S&F mission </li>
+                    <li className="overview__table-text"> To design, build, test and demonstrate Experimental On-Board Computer (ONDOSAT-OBC) </li>
+                    <li className="overview__table-text"> To demonstrate the Passive Attitude Control System </li>
+                    <li className="overview__table-text"> To demonstrate the Remote sensor mission based on low-power RF module </li>
                   </ul>
                 </td>
               </tr>
@@ -151,8 +145,8 @@ function Home() {
       </div>
 
       <div className="timeline-section">
-        <h1 className="timeline-section__title">Maya-5 and Maya-6 timeline</h1>
-        <div className="timeline-section__subtitle">Follow Maya-5's and Maya-6's space journey.</div>
+        <h1 className="timeline-section__title">OWLSAT- 1 and OWLSAT-2  timelime /Big font/</h1>
+        <div className="timeline-section__subtitle">Follow OWLSAT- 1 and OWLSAT-2 space journey.</div>
       </div>
 
       <ul className="timeline">

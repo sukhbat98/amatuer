@@ -1,7 +1,7 @@
 .site-footer {
   background: $mainBlue;
   color: #fff;
-  padding: 44px 35px;
+  padding: 25px 35px;
 
   &__container {
     justify-content: space-between;
@@ -16,7 +16,9 @@
   }
 
   &__img {
-    width: 200px;
+    img {
+      width: 150px;
+    }
   }
 
   &__text {

@@ -5,26 +5,24 @@ import Footer from "@components/Footer";
 
 const initDownloadFiles = [
   {
-    title : "Maya-3 and Maya-4 High Level Specifications",
+    title: "ONDOSAT-OWL Antenna Radiation Pattern",
     content: "",
-    downloadLink: "/assets/pdf/dummy.pdf",
+    downloadLink: "/assets/pdf/ONDOSAT-OWL Antenna Radiation Pattern.pdf",
   },
   {
-    title : "Diwata-2 Amateur Radio Unit (ARU) Utilization Manual",
-    content: `
-    <p>
-      A guide on how to access Diwata-2’s Amateur Radio Unit (ARU), which was designated PO-101 by
-      <a href='https://www.amsat.org/diwata-2-designated-philippines-oscar-101-po-101/'>
-        AMSAT
-      </a>
-      on April 12, 2019.
-    </p>
-    <p>
-      Schedule of ON times:
-      <a href="https://twitter.com/Diwata2PH">https://twitter.com/Diwata2PH</a>
-    </p>
-    `,
-    downloadLink: "/assets/pdf/dummy.pdf",
+    title: "ONDOSAT-OWL CAD Drawings",
+    content: "",
+    downloadLink: "/assets/pdf/ONDOSAT-OWL CAD Drawings.pdf",
+  },
+  {
+    title: "ONDOSAT-OWL CW Timing",
+    content: "",
+    downloadLink: "/assets/pdf/ONDOSAT-OWL CW timing.pdf",
+  },
+  {
+    title: "ONDOSAT-OWL Power-Budget",
+    content: "",
+    downloadLink: "/assets/pdf/ONDOSAT-OWL Power-Budget.pdf",
   },
 ]
 
