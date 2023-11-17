@@ -5,7 +5,7 @@
   height: 100%;
   align-items: center;
   padding: 40px 50px;
-  background-image: url("/public/images/fred-moon-small.jpg");
+  background-image: url("/public/images/ivana-cajina-asuyh-small.jpg");
 
   &__image {
     width: 100%;
@@ -108,10 +108,11 @@
   }
 
   @mixin atMedium {
-    background-image: url("/public/images/fred-moon-large.jpg");
+    background-image: url("/public/images/ivana-cajina-asuyh-medium.jpg");
   }
 
   @mixin atLarge {
     padding: 8.2rem 3.125rem;
+    background-image: url("/public/images/ivana-cajina-asuyh-large.jpg");
   }
 }
