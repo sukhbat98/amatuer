@@ -12,15 +12,12 @@ const Header = () => {
     <header className="navbar">
       <div className="navbar__container-fluid">
         <div className="navbar__brand">
-          <a href="https://ondospace.com">
+          <a href="/">
             <img className='lazyload' alt="ONDO-SPACE" src="/ondo.svg" />
           </a>
-          <a href="https://ondo.mn">
-            <img className='lazyload' alt="ONDO-SPACE" src="/images/ondo-logo.svg" />
-          </a>
-          <a href="http://www.mrsf.mn/">
+          {/* <a href="http://www.mrsf.mn/">
             <img className='lazyload' alt="ONDO-SPACE" src="images/mrsf-logo.png" />
-          </a>
+          </a> */}
         </div>
         <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
           <div className="navbar__toggler-menu">

@@ -13,7 +13,7 @@ function Amatuer() {
       <div className="amatuer">
         <div className="overview">
           <div className="overview__container">
-            <h1 className="overview__name-small">OWLSAT- 1 and OWLSAT-2  overview  /Big font/</h1>
+            <h1 className="overview__name-small"> OWLSAT- 1 and OWLSAT-2  overview </h1>
             <table className="overview__table">
               <tbody>
                 <tr>

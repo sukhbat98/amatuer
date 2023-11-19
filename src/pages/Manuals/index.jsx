@@ -85,7 +85,7 @@ function Manuals() {
                     </div>
                   </div>
                   <div className="manuals__download-actions col-lg-1">
-                    <a href={downloadFile.downloadLink}>
+                    <a href={downloadFile.downloadLink} target="_blank">
                       <i className="fa fa-download" aria-hidden="true"></i>
                     </a>
                   </div>

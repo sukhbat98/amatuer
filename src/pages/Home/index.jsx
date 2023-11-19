@@ -18,7 +18,7 @@ function Home() {
         </div>
         <div className="row__large-6">
           <h1 className="large-hero__name">
-            OWLSAT- 1 and OWLSAT-2  /Big font/
+            OWLSAT- 1 and OWLSAT-2
           </h1>
           <p className="large-hero__text">
             ONDOSAT-OWL-1 is a 0.5U cubesat and will be the first satellite of collabration project of ondo space llc and Mongolian Radio Sport Federation (MRSF).  ONDOSAT-OWL-1 is a part of the ONDOSAT-OWL CubeSat constellation of two satellites, along with ONDOSAT-OWL-1 and ONDOSAT-OWL-2.Main mission provides a message store-and-forward capability to the amateur operators on amatuer UHF band.The mission objective is to demonstrate S&F operations, including scheduled and unscheduled uplink of S&F data from amateur radio operators in Mongolia and all over the globe. The data will be stored onboard and transmitted to compatible ground stations in Mongolia. The purpose of the mission is to provide the amateur radio community in Mongolia with a reliable satellite platform to evaluate their uplink equipment by sending S&F messages to the satellite and validate a successful downlinks. Besides this mission, The ONDOSAT-OWL CubeSats are to broadcast encrypted short messages through its beacon within the 435-438MHz frequency band. This mission offers the amateur radio community the chance to decode these messages using a publicly accessible key provided on the official ONDOSAT-OWL website. Accomplished individuals who successfully decrypt the messages will be recognized on the official website and will receive a special QSL card as a token of achievement from the ONDOSAT-OWL project.
@@ -35,7 +35,7 @@ function Home() {
 
       <div className="overview">
         <div className="overview__container">
-          <h1 className="overview__name-small">OWLSAT- 1 and OWLSAT-2  overview  /Big font/</h1>
+          <h1 className="overview__name-small">OWLSAT- 1 and OWLSAT-2  overview </h1>
           <table className="overview__table">
             <tbody>
               <tr>
@@ -145,7 +145,7 @@ function Home() {
       </div>
 
       <div className="timeline-section">
-        <h1 className="timeline-section__title">OWLSAT- 1 and OWLSAT-2  timelime /Big font/</h1>
+        <h1 className="timeline-section__title">OWLSAT- 1 and OWLSAT-2  timelime </h1>
         <div className="timeline-section__subtitle">Follow OWLSAT- 1 and OWLSAT-2 space journey.</div>
       </div>
 
@@ -176,7 +176,7 @@ function Home() {
           </div>
         </li>
 
-        <li className="timeline__event">
+        {/* <li className="timeline__event">
           <a href="https://www.nishinippon.co.jp/item/n/1020892/">
             <label className="timeline__event-icon"></label>
           </a>
@@ -224,7 +224,7 @@ function Home() {
               </a>
             </div>
           </div>
-        </li>
+        </li> */}
 
       </ul>
 
