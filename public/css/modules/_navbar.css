@@ -50,6 +50,11 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+
+    a {
+      padding-right: 4px;
+      padding-left: 4px;
+    }
   }
 
   &__toggler {
