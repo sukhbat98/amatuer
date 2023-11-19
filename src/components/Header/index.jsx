@@ -15,9 +15,9 @@ const Header = () => {
           <a href="/">
             <img className='lazyload' alt="ONDO-SPACE" src="/ondo.svg" />
           </a>
-          {/* <a href="http://www.mrsf.mn/">
+          <a href="http://www.mrsf.mn/">
             <img className='lazyload' alt="ONDO-SPACE" src="images/mrsf-logo.png" />
-          </a> */}
+          </a>
         </div>
         <button className="navbar__toggler" type="button" onClick={() => handleToggleBtn()}>
           <div className="navbar__toggler-menu">
